@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/upload-and-summarize.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/upload-and-summarize", "dest": "/api/upload-and-summarize.js" }
+    ]
+  }
+  
