@@ -1,5 +1,6 @@
 const express = require('express');
 const multer = require('multer');
+const cors = require('cors');
 const { GoogleAIFileManager, GoogleGenerativeAI } = require('@google/generative-ai/server');
 
 // Initialize GoogleAIFileManager and GoogleGenerativeAI with environment variables
@@ -8,6 +9,9 @@ const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 
 const app = express();
 const upload = multer({ dest: '/tmp/uploads/' });
+
+// Enable CORS
+app.use(cors());
 
 app.post('/api/upload-and-summarize', upload.single('file'), async (req, res) => {
   try {
