@@ -1,0 +1,1 @@
+import{_ as s,p as t,o as c,l as a,a as e,a6 as p,a7 as r}from"./index-b710355a.js";const l={},u={class:"app h-fudll !bg-[#ECF0F4] relative"};function m(i,d){const o=p,_=t("RouterView"),n=r;return c(),a("div",u,[e(o),e(_,{class:"w-full bg-[#ECF0F4]"}),e(n)])}const h=s(l,[["render",m],["__file","/usr/src/app/src/layouts/home.vue"]]);export{h as default};

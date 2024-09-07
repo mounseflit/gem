@@ -1,0 +1,1 @@
+import{_ as o,p as r,o as t,l as a,d as c,a as s,F as n}from"./index-b710355a.js";const l={};function _(i,d){const e=r("RouterView");return t(),a(n,null,[c(' class="w-full h-[calc(100hv-1.75rem)] overflow-hidden p-7 bg-[#ECF0F4]" '),s(e)],2112)}const p=o(l,[["render",_],["__file","/usr/src/app/src/layouts/withSidebar.vue"]]);export{p as default};

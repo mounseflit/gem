@@ -1,0 +1,1126 @@
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    :root,
+    :host {
+      --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+      --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+      --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+      --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+      --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+      --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+    }
+
+    svg:not(:root).svg-inline--fa,
+    svg:not(:host).svg-inline--fa {
+      overflow: visible;
+      box-sizing: content-box;
+    }
+
+    .svg-inline--fa {
+      display: var(--fa-display, inline-block);
+      height: 1em;
+      overflow: visible;
+      vertical-align: -0.125em;
+    }
+
+    .svg-inline--fa.fa-2xs {
+      vertical-align: 0.1em;
+    }
+
+    .svg-inline--fa.fa-xs {
+      vertical-align: 0em;
+    }
+
+    .svg-inline--fa.fa-sm {
+      vertical-align: -0.0714285705em;
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -0.2em;
+    }
+
+    .svg-inline--fa.fa-xl {
+      vertical-align: -0.25em;
+    }
+
+    .svg-inline--fa.fa-2xl {
+      vertical-align: -0.3125em;
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-li {
+      width: var(--fa-li-width, 2em);
+      top: 0.25em;
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: var(--fa-fw-width, 1.25em);
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -0.125em;
+      width: 1em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+    .fa-layers-counter {
+      background-color: var(--fa-counter-background-color, #ff253a);
+      border-radius: var(--fa-counter-border-radius, 1em);
+      box-sizing: border-box;
+      color: var(--fa-inverse, #fff);
+      line-height: var(--fa-counter-line-height, 1);
+      max-width: var(--fa-counter-max-width, 5em);
+      min-width: var(--fa-counter-min-width, 1.5em);
+      overflow: hidden;
+      padding: var(--fa-counter-padding, 0.25em 0.5em);
+      right: var(--fa-right, 0);
+      text-overflow: ellipsis;
+      top: var(--fa-top, 0);
+      -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+      transform: scale(var(--fa-counter-scale, 0.25));
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-bottom-right {
+      bottom: var(--fa-bottom, 0);
+      right: var(--fa-right, 0);
+      top: auto;
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right;
+    }
+
+    .fa-layers-bottom-left {
+      bottom: var(--fa-bottom, 0);
+      left: var(--fa-left, 0);
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left;
+    }
+
+    .fa-layers-top-right {
+      top: var(--fa-top, 0);
+      right: var(--fa-right, 0);
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: top right;
+      transform-origin: top right;
+    }
+
+    .fa-layers-top-left {
+      left: var(--fa-left, 0);
+      right: auto;
+      top: var(--fa-top, 0);
+      -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+      transform: scale(var(--fa-layers-scale, 0.25));
+      -webkit-transform-origin: top left;
+      transform-origin: top left;
+    }
+
+    .fa-1x {
+      font-size: 1em;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .fa-3x {
+      font-size: 3em;
+    }
+
+    .fa-4x {
+      font-size: 4em;
+    }
+
+    .fa-5x {
+      font-size: 5em;
+    }
+
+    .fa-6x {
+      font-size: 6em;
+    }
+
+    .fa-7x {
+      font-size: 7em;
+    }
+
+    .fa-8x {
+      font-size: 8em;
+    }
+
+    .fa-9x {
+      font-size: 9em;
+    }
+
+    .fa-10x {
+      font-size: 10em;
+    }
+
+    .fa-2xs {
+      font-size: 0.625em;
+      line-height: 0.1em;
+      vertical-align: 0.225em;
+    }
+
+    .fa-xs {
+      font-size: 0.75em;
+      line-height: 0.0833333337em;
+      vertical-align: 0.125em;
+    }
+
+    .fa-sm {
+      font-size: 0.875em;
+      line-height: 0.0714285718em;
+      vertical-align: 0.0535714295em;
+    }
+
+    .fa-lg {
+      font-size: 1.25em;
+      line-height: 0.05em;
+      vertical-align: -0.075em;
+    }
+
+    .fa-xl {
+      font-size: 1.5em;
+      line-height: 0.0416666682em;
+      vertical-align: -0.125em;
+    }
+
+    .fa-2xl {
+      font-size: 2em;
+      line-height: 0.03125em;
+      vertical-align: -0.1875em;
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em;
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: var(--fa-li-margin, 2.5em);
+      padding-left: 0;
+    }
+
+    .fa-ul>li {
+      position: relative;
+    }
+
+    .fa-li {
+      left: calc(var(--fa-li-width, 2em) * -1);
+      position: absolute;
+      text-align: center;
+      width: var(--fa-li-width, 2em);
+      line-height: inherit;
+    }
+
+    .fa-border {
+      border-color: var(--fa-border-color, #eee);
+      border-radius: var(--fa-border-radius, 0.1em);
+      border-style: var(--fa-border-style, solid);
+      border-width: var(--fa-border-width, 0.08em);
+      padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+    }
+
+    .fa-pull-left {
+      float: left;
+      margin-right: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-pull-right {
+      float: right;
+      margin-left: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-beat {
+      -webkit-animation-name: fa-beat;
+      animation-name: fa-beat;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-bounce {
+      -webkit-animation-name: fa-bounce;
+      animation-name: fa-bounce;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+    }
+
+    .fa-fade {
+      -webkit-animation-name: fa-fade;
+      animation-name: fa-fade;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-beat-fade {
+      -webkit-animation-name: fa-beat-fade;
+      animation-name: fa-beat-fade;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-flip {
+      -webkit-animation-name: fa-flip;
+      animation-name: fa-flip;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-shake {
+      -webkit-animation-name: fa-shake;
+      animation-name: fa-shake;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin {
+      -webkit-animation-name: fa-spin;
+      animation-name: fa-spin;
+      -webkit-animation-delay: var(--fa-animation-delay, 0s);
+      animation-delay: var(--fa-animation-delay, 0s);
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 2s);
+      animation-duration: var(--fa-animation-duration, 2s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin-reverse {
+      --fa-animation-direction: reverse;
+    }
+
+    .fa-pulse,
+    .fa-spin-pulse {
+      -webkit-animation-name: fa-spin;
+      animation-name: fa-spin;
+      -webkit-animation-direction: var(--fa-animation-direction, normal);
+      animation-direction: var(--fa-animation-direction, normal);
+      -webkit-animation-duration: var(--fa-animation-duration, 1s);
+      animation-duration: var(--fa-animation-duration, 1s);
+      -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+      animation-timing-function: var(--fa-animation-timing, steps(8));
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .fa-beat,
+      .fa-bounce,
+      .fa-fade,
+      .fa-beat-fade,
+      .fa-flip,
+      .fa-pulse,
+      .fa-shake,
+      .fa-spin,
+      .fa-spin-pulse {
+        -webkit-animation-delay: -1ms;
+        animation-delay: -1ms;
+        -webkit-animation-duration: 1ms;
+        animation-duration: 1ms;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+      }
+    }
+
+    @-webkit-keyframes fa-beat {
+
+      0%,
+      90% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      45% {
+        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+        transform: scale(var(--fa-beat-scale, 1.25));
+      }
+    }
+
+    @keyframes fa-beat {
+
+      0%,
+      90% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      45% {
+        -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+        transform: scale(var(--fa-beat-scale, 1.25));
+      }
+    }
+
+    @-webkit-keyframes fa-bounce {
+      0% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      10% {
+        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      }
+
+      30% {
+        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      }
+
+      50% {
+        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      }
+
+      57% {
+        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      }
+
+      64% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @keyframes fa-bounce {
+      0% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      10% {
+        -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      }
+
+      30% {
+        -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      }
+
+      50% {
+        -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      }
+
+      57% {
+        -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      }
+
+      64% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1, 1) translateY(0);
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @-webkit-keyframes fa-fade {
+      50% {
+        opacity: var(--fa-fade-opacity, 0.4);
+      }
+    }
+
+    @keyframes fa-fade {
+      50% {
+        opacity: var(--fa-fade-opacity, 0.4);
+      }
+    }
+
+    @-webkit-keyframes fa-beat-fade {
+
+      0%,
+      100% {
+        opacity: var(--fa-beat-fade-opacity, 0.4);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+        transform: scale(var(--fa-beat-fade-scale, 1.125));
+      }
+    }
+
+    @keyframes fa-beat-fade {
+
+      0%,
+      100% {
+        opacity: var(--fa-beat-fade-opacity, 0.4);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+        transform: scale(var(--fa-beat-fade-scale, 1.125));
+      }
+    }
+
+    @-webkit-keyframes fa-flip {
+      50% {
+        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      }
+    }
+
+    @keyframes fa-flip {
+      50% {
+        -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      }
+    }
+
+    @-webkit-keyframes fa-shake {
+      0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+      }
+
+      4% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+      }
+
+      8%,
+      24% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+      }
+
+      12%,
+      28% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+      }
+
+      16% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+      }
+
+      20% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+      }
+
+      32% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+      }
+
+      36% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+      }
+
+      40%,
+      100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes fa-shake {
+      0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+      }
+
+      4% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+      }
+
+      8%,
+      24% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+      }
+
+      12%,
+      28% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+      }
+
+      16% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+      }
+
+      20% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+      }
+
+      32% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+      }
+
+      36% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+      }
+
+      40%,
+      100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1);
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+    }
+
+    .fa-rotate-by {
+      -webkit-transform: rotate(var(--fa-rotate-angle, none));
+      transform: rotate(var(--fa-rotate-angle, none));
+    }
+
+    .fa-stack {
+      display: inline-block;
+      vertical-align: middle;
+      height: 2em;
+      position: relative;
+      width: 2.5em;
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: var(--fa-stack-z-index, auto);
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em;
+    }
+
+    .fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+
+    .sr-only,
+    .fa-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .sr-only-focusable:not(:focus),
+    .fa-sr-only-focusable:not(:focus) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: black;
+    }
+
+    .fad.fa-inverse,
+    .fa-duotone.fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+  </style>
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="description"
+    content="Interact with your files like never before. Get instant answers to your questions and valuable insights from your data. Upload and talk to your files, Simple as That!">
+  <link rel="icon" type="image/png" href="/favicon2.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/assets/index-7c6dab57.css">
+
+
+  <link rel="stylesheet" href="/assets/clientOnly-e583a933.css">
+
+  <title>MySpace | BookQA </title>
+  <meta http-equiv="origin-trial"
+    content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+  
+</head>
+
+<body class="font-sans" cz-shortcut-listen="true">
+  <div id="app" data-server-rendered="true" class="font-poppins"><!--[-->
+    <div class="app h-fudll !bg-[#ECF0F4] relative bg-[#e7e7e780]"><!-- <ClientOnly> -->
+      <nav data-headlessui-state="" class="bg-primary absolute inset-x-0 top-0 z-50"><!---->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+
+
+           <div class="flex-shrink-0" style="display: flex; align-items: center;">
+                <a aria-current="page" href="/" class="router-link-active router-link-exact-active" style="display: flex; align-items: center; text-decoration: none;">
+                    <h1 style="color: rgb(255, 255, 255); font-size: xx-large; margin-right: 5px; margin-bottom: 2px;">Book</h1>
+                    <svg width="54" height="29.222222" xmlns="http://www.w3.org/2000/svg" fill="none">
+                      <!-- SVG paths here -->
+                      <defs>
+                       <clipPath id="clip0_1_2">
+                        <rect width="802.25" height="183.92" fill="white" id="svg_1"/>
+                       </clipPath>
+                      </defs>
+                      <g>
+                       <title>Layer 1</title>
+                       <g clip-path="url(#clip0_1_2)" id="svg_2" stroke="null">
+                        <path d="m53.30061,24.5079l-6.24904,0c-0.07931,0 -0.15736,-0.02156 -0.22534,-0.06333l-1.57233,-0.95531c-0.06924,-0.04177 -0.14603,-0.06333 -0.22534,-0.06333l-7.6917,0c-0.07931,0 -0.15736,0.02156 -0.22534,0.06333l-1.57233,0.95531c-0.06924,0.04177 -0.14603,0.06333 -0.22534,0.06333l-6.24904,0c-0.46704,0 -0.63321,-0.66292 -0.22786,-0.91219l4.27009,-2.63013c0.06924,-0.04312 0.14729,-0.06468 0.22786,-0.06468l15.69812,0c0.08057,0 0.15862,0.02291 0.22786,0.06468l4.27009,2.63013c0.40536,0.24927 0.23919,0.91219 -0.22786,0.91219l-0.00252,0l0.00002,0z" fill="#8800FF" id="svg_3" stroke="null"/>
+                        <path d="m53.48314,22.32106l-4.14043,-2.55198c-0.06924,-0.04177 -0.12589,-0.10375 -0.16617,-0.17651l-0.7805,-1.42555c-0.04028,-0.07276 -0.06168,-0.1563 -0.06294,-0.23984l-0.02392,-1.93487c0,-0.08489 -0.02266,-0.16708 -0.06294,-0.23984l-3.88739,-7.10485c-0.04028,-0.07276 -0.09693,-0.13339 -0.16491,-0.17651l-1.56478,-0.96878c-0.06798,-0.04177 -0.12589,-0.1024 -0.16491,-0.17651l-0.67979,-1.24096c-0.04154,-0.07545 -0.06294,-0.16034 -0.06294,-0.24657l0,-5.23735c0,-0.49989 0.61811,-0.67774 0.85226,-0.24523l11.53378,21.29704c0.23415,0.43252 -0.21778,0.91893 -0.62314,0.66831l-0.00126,0l-0.00002,0z" fill="#8800FF" id="svg_4" stroke="null"/>
+                        <path d="m28.88102,22.32106l4.14043,-2.55198c0.06924,-0.04177 0.12589,-0.10375 0.16617,-0.17651l0.7805,-1.42555c0.04028,-0.07276 0.06168,-0.1563 0.06294,-0.23984l0.02392,-1.93487c0,-0.08489 0.02266,-0.16708 0.06294,-0.23984l3.88739,-7.10485c0.04028,-0.07276 0.09693,-0.13339 0.16491,-0.17651l1.56478,-0.96878c0.06798,-0.04177 0.12589,-0.1024 0.16491,-0.17651l0.67979,-1.24096c0.04154,-0.07545 0.06294,-0.16034 0.06294,-0.24657l0,-5.23735c0,-0.49989 -0.61811,-0.67774 -0.85226,-0.24523l-11.53378,21.29704c-0.23415,0.43252 0.21778,0.91893 0.62314,0.66831l0.00126,0l0.00002,0z" fill="#8800FF" id="svg_5" stroke="null"/>
+                        <path d="m22.8397,24.44592l-3.5966,0l-1.38224,-1.74893c-1.89586,1.39052 -4.05231,2.08443 -6.47186,2.08443c-1.59247,0 -3.09179,-0.31933 -4.50046,-0.958c-1.40868,-0.63867 -2.61593,-1.51044 -3.62051,-2.61396c-1.00584,-1.10352 -1.80144,-2.42667 -2.38808,-3.9681c-0.58663,-1.54143 -0.87995,-3.17987 -0.87995,-4.91802c0,-2.28654 0.49474,-4.37097 1.48421,-6.25464c0.98947,-1.88367 2.35661,-3.36446 4.10014,-4.44643c1.74354,-1.08196 3.67842,-1.62227 5.8034,-1.62227c1.58114,0 3.07542,0.31664 4.4841,0.94992c1.40868,0.63328 2.61719,1.49562 3.62807,2.58836c1.01087,1.09274 1.809,2.40107 2.39563,3.92498c0.58663,1.52391 0.87995,3.14349 0.87995,4.85873c0,3.28362 -0.95297,6.08622 -2.8589,8.40644l2.92184,3.71613l0.00126,0.00135l0,0.00001zm-11.45069,-2.85784c1.67556,0 3.16732,-0.48237 4.47655,-1.44576l-5.34013,-6.85962l3.56512,0l3.77032,4.82505c1.15187,-1.65865 1.72717,-3.58678 1.72717,-5.78305c0,-1.68156 -0.35878,-3.22164 -1.07633,-4.62294c-0.71756,-1.4013 -1.70451,-2.50213 -2.96087,-3.30383c-1.25635,-0.8017 -2.64363,-1.20188 -4.16309,-1.20188c-1.51946,0 -2.90547,0.40153 -4.16183,1.20188c-1.25635,0.8017 -2.24331,1.90253 -2.96087,3.30383c-0.71756,1.4013 -1.07633,2.94273 -1.07633,4.62294c0,2.61127 0.78805,4.80888 2.36416,6.59014c1.57611,1.78261 3.52106,2.67325 5.83487,2.67325l0.00126,0l0,-0.00001z" fill="white" id="svg_6" stroke="null"/>
+                       </g>
+                      </g>
+                     </svg>
+                </a>
+              </div>
+
+              
+              <div class="sm:ml-20 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --><!-- <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Dashboar --><a
+                    href="/index.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-primary">Home</a><a
+                    href="/pricing.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-primary">Pricing</a><a
+                    href="/myspace.html"
+                    class="router-link-active router-link-exact-active rounded-md px-3 py-2 text-sm font-medium bg-white text-primary">My
+                    Space</a><a href="/contact.html"
+                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white hover:text-primary">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="sm:ml-6 sm:block">
+              <div class="flex items-center"><!-- <button
+              type="button"
+              class="rounded-full bg-primary p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
+              <span class="sr-only">View notifications</span>
+              <BellIcon class="h-6 w-6" aria-hidden="true" />
+            </button> --><!-- Profile dropdown -->
+                <a href="/login.html" class="text-sm font-semibold leading-6 text-white">Log
+                  in <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="-mr-2 flex sm:hidden"><!-- Mobile menu button --><button id="headlessui-disclosure-button-5"
+                type="button" aria-expanded="false" data-headlessui-state=""
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"><span
+                  class="sr-only">Open main menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="block h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                  </path>
+                </svg></button></div>
+          </div>
+        </div><!---->
+      </nav><!-- </ClientOnly> -->
+      <div class="flex pt-10 sm:pt-30 sm:px-10 h-[calc(100vh-0rem)] sm:h-[calc(100vh-2.5rem)] overflow-hidden">
+        <div
+          class="!bg-[#dfe8f2] w-[100%] rounded-xl pr-6 pt-4 overflow-yd-auto relative w-[100%] sm:!w-[60%] px-3 shadow-md">
+          <div
+            class="text-[#3C444B] relative rounded-xl h-[calc(100%-7rem)] sm:h-[calc(100%-7.5rem)] overflow-y-scroll w-full border-d2 border-red pr-6"><!-- <div
+			class="border-b-2 border-dark-color sticky top-0 right-0 bg-grey-color opacity-30 z-10 w-full p-8 text-2xl text-dark-color font-medium"
+		>
+			ss
+		</div> -->
+            <div class="py-6 overflow-x-hidden">
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between">
+                <div>
+                  <div class="text-left pl-3 font-bold">BookQA</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-white">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0"></div>
+                      <div class="text-left text-sm"><span>
+                        Welcome to BookQA, your intelligent PDF companion! I'm here to help you seamlessly interact with your PDF files. Whether you need assistance extracting information, searching for specific content, or organizing your documents, I've got you covered. Feel free to ask me anything related to your PDF files, and let's make managing and interacting with PDFs a breeze!</span></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--v-if-->
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between">
+                <div>
+                  <div class="text-left pl-3 font-bold">BookQA</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-white">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0"></div>
+                      <div class="text-left text-sm"><span>Do you have any questions or queries or inquiries about this Document?</span></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--v-if-->
+
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between justify-end">
+                <div>
+                  <div class="text-left pl-3 font-bold">You</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-[#D7D9E8] reverse">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0 !border-b-[#D7D9E8] border-b-[1rem]">
+                      </div>
+                      <div class="text-left text-sm reverse"><span>Yes, Can you help me rate this CV Please ?</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              
+              <!--v-if-->
+              
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between">
+                <div>
+                  <div class="text-left pl-3 font-bold">BookQA</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-white">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0"></div>
+                      <div class="text-left text-sm"><span>Sure, Based on the provided information, this profile seems to have a strong foundation in both AI and software engineering. The individual mentions skills in website and web application development, desktop application development, programming languages including Python and C++, and data science tools such as NumPy and TensorFlow. They also have experience working on projects related to web development, machine learning, and Arduino. Additionally, they express an interest in joining the Summer Academy and mention being creative, ambitious, and a critical thinker. Overall, this profile demonstrates a combination of technical skills and a passion for AI and software engineering, making them a potentially good fit for these roles.</span></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--v-if-->
+
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between justify-end">
+                <div>
+                  <div class="text-left pl-3 font-bold">You</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-[#D7D9E8] reverse">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0 !border-b-[#D7D9E8] border-b-[1rem]">
+                      </div>
+                      <div class="text-left text-sm reverse"><span>Thank you BookQA.</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <!--v-if-->
+              <div class="flex items-center gap-x-2 mb-1 jusDtify-between">
+                <div>
+                  <div class="text-left pl-3 font-bold">File</div>
+                  <div class="flex items-center gap-x-4">
+                    <div
+                      class="relative shadow-sm rounded-2xl rounded-bl-none py-3 pl-5 pr-5 ml-2 font-medium bg-white">
+                      <div id="triangle" class="absolute left-[-.6rem] bottom-0"></div>
+                      <div class="text-left text-sm"><span>You're welcome! If you have any more questions or if there's anything else I can help you with, feel free to ask. Happy interacting with your PDFs!</span></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--v-if-->
+
+            </div>
+          </div>
+          <div class="!pl-2 pt-4 !sm:pl-3 sm:pt-4" >
+            <div class="flex items-center gap-x-4 w-[96%] sm:w-[98%]" >
+              <div class="!w-[100%]"><!--v-if-->
+                <div class="mt-1 mb-2 relative">
+                  
+                  <input id="text" name="text" placeholder="Write your message.."
+                    type="text" block="" autocomplete="off" required=""
+                    class="w-full bg-white rounded-md border-0 px-3 py-2 placeholder-gray-400 shadow-sm !py-2 !sm:py-3 !px-6 rounded-lg text-md sm:text-xl !rounded-full !bg-[#F5F7FB] shadow-lg">
+                  <div class="pointer-cursor absolute inset-y-0 right-0 flex items-center pr-3"></div>
+                </div>
+              </div><svg
+                class="svg-inline--fa fa-paper-plane cursor-pointer h-3 sm:h-4 w-4 bg-primary-color !text-white p-3 rounded-full mr-1"
+                aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path class="" fill="currentColor"
+                  d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- {{ pdfBlob }} --><VuePdfEmbed
+    class="mx-4 overflow-y-scroll overflow-x-hidden rounded-md h-[calc(100vh-4rem)]"
+    :source="documentContent"
+  />
+
+  <img
+    width="892" height="1262"
+      class="w-full" alt=""
+    src="/api/screenshots/Mounsef Litniti.pdf-1704130625783-51398352.1.png"/>
+
+
+        <div class="pdf-render w-full hidden sm:block !w-[40%] border-2 ml-4" classs="
+      overflow-y-scroll overflow-x-hidden
+      rounded-md
+      h-[calc(100vh-4rem)]
+    ">
+
+
+          <div class="pdf-container flex flex-col gap-yd-4 wd-full dshrink-0">
+            <!-- <div class="w-fdll mb-4" style="height: 1262.84px;"><canvas width="892" height="1262"
+                class="w-full"></canvas>
+            </div> -->
+            <div class="w-fdll mb-4" style="height: 1262.84px;">   
+              
+<!--               
+              <img
+              width="892" height="1262"
+                class="w-full" alt=""
+              src="/api/screenshots/Mounsef Litniti.pdf-1704130625783-51398352.1.png"/> -->
+        
+            </div>
+          </div><!--v-if-->
+        </div><!----><!---->
+      </div>
+    </div><!----><!----><!--]-->
+  </div>
+
+
+  <div>
+    <div>
+      <div class="Vue-Toastification__container top-left"></div>
+    </div>
+    <div>
+      <div class="Vue-Toastification__container top-center"></div>
+    </div>
+    <div>
+      <div class="Vue-Toastification__container top-right"></div>
+    </div>
+    <div>
+      <div class="Vue-Toastification__container bottom-left"></div>
+    </div>
+    <div>
+      <div class="Vue-Toastification__container bottom-center"></div>
+    </div>
+    <div>
+      <div class="Vue-Toastification__container bottom-right"></div>
+    </div>
+  </div><!---->
+</body>
+
+</html>
